@@ -23,15 +23,15 @@
 		CA6868AC292560D40093308D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA6868AA292560D40093308D /* Main.storyboard */; };
 		CA6868AE292560D70093308D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA6868AD292560D70093308D /* Assets.xcassets */; };
 		CA6868B1292560D70093308D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA6868AF292560D70093308D /* LaunchScreen.storyboard */; };
-		CA6868CE2925A1200093308D /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6868CB2925A1200093308D /* RequestModel.swift */; };
-		CA6868CF2925A1200093308D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6868CC2925A1200093308D /* NetworkError.swift */; };
-		CA6868D02925A1200093308D /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6868CD2925A1200093308D /* ServiceLayer.swift */; };
-		CA6868D22925A1380093308D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6868D12925A1380093308D /* Constants.swift */; };
 		CA6868D42925A1AC0093308D /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6868D32925A1AC0093308D /* LoginResponse.swift */; };
-		CA6868D62925A1CF0093308D /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6868D52925A1CF0093308D /* LoginPresenter.swift */; };
-		CA6868D82925A1DE0093308D /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6868D72925A1DE0093308D /* LoginProvider.swift */; };
 		CA6868E32925EBF90093308D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6868E12925EBF90093308D /* LoginViewController.swift */; };
 		CA7A50902926AEC600E304D5 /* NewTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A508F2926AEC600E304D5 /* NewTokenResponse.swift */; };
+		CAE91DE32936846E00D51A51 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE91DE22936846E00D51A51 /* Constants.swift */; };
+		CAE91DE72936847F00D51A51 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE91DE42936847F00D51A51 /* RequestModel.swift */; };
+		CAE91DE82936847F00D51A51 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE91DE52936847F00D51A51 /* ServiceLayer.swift */; };
+		CAE91DE92936847F00D51A51 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE91DE62936847F00D51A51 /* NetworkError.swift */; };
+		CAE91DEB2936849400D51A51 /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE91DEA2936849400D51A51 /* LoginProvider.swift */; };
+		CAE91DED293684B900D51A51 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE91DEC293684B900D51A51 /* LoginPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,15 +53,15 @@
 		CA6868AD292560D70093308D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA6868B0292560D70093308D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA6868B2292560D70093308D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA6868CB2925A1200093308D /* RequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestModel.swift; path = "../../../../../Pruebas técnicas/iOS/Coppel/Coppel/ServiceLayer/RequestModel.swift"; sourceTree = "<group>"; };
-		CA6868CC2925A1200093308D /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkError.swift; path = "../../../../../Pruebas técnicas/iOS/Coppel/Coppel/ServiceLayer/NetworkError.swift"; sourceTree = "<group>"; };
-		CA6868CD2925A1200093308D /* ServiceLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceLayer.swift; path = "../../../../../Pruebas técnicas/iOS/Coppel/Coppel/ServiceLayer/ServiceLayer.swift"; sourceTree = "<group>"; };
-		CA6868D12925A1380093308D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = "../../../../../Pruebas técnicas/iOS/Coppel/Coppel/Constants/Constants.swift"; sourceTree = "<group>"; };
 		CA6868D32925A1AC0093308D /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
-		CA6868D52925A1CF0093308D /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginPresenter.swift; path = "../../../../../../Pruebas técnicas/iOS/Coppel/Coppel/Login/Presenter/LoginPresenter.swift"; sourceTree = "<group>"; };
-		CA6868D72925A1DE0093308D /* LoginProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginProvider.swift; path = "../../../../../../Pruebas técnicas/iOS/Coppel/Coppel/Login/Provider/LoginProvider.swift"; sourceTree = "<group>"; };
 		CA6868E12925EBF90093308D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CA7A508F2926AEC600E304D5 /* NewTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTokenResponse.swift; sourceTree = "<group>"; };
+		CAE91DE22936846E00D51A51 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CAE91DE42936847F00D51A51 /* RequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
+		CAE91DE52936847F00D51A51 /* ServiceLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		CAE91DE62936847F00D51A51 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CAE91DEA2936849400D51A51 /* LoginProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginProvider.swift; sourceTree = "<group>"; };
+		CAE91DEC293684B900D51A51 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				CA5BB903292AD2FF00225C3C /* View */,
-				CA207D6B2926E8AE002359C5 /* Controller */,
 				CA207D6A2926E8A8002359C5 /* Presenter */,
 				CA207D692926E89F002359C5 /* Provider */,
 			);
@@ -110,13 +109,6 @@
 				CA5BB913292B0E7A00225C3C /* MoviesPresenter.swift */,
 			);
 			path = Presenter;
-			sourceTree = "<group>";
-		};
-		CA207D6B2926E8AE002359C5 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		CA5BB903292AD2FF00225C3C /* View */ = {
@@ -176,7 +168,7 @@
 		CA6868C0292571C40093308D /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				CA6868D12925A1380093308D /* Constants.swift */,
+				CAE91DE22936846E00D51A51 /* Constants.swift */,
 				CA207D602926C4B3002359C5 /* TextFieldUtils.swift */,
 			);
 			path = Constants;
@@ -203,7 +195,7 @@
 		CA6868C62925720D0093308D /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				CA6868D52925A1CF0093308D /* LoginPresenter.swift */,
+				CAE91DEC293684B900D51A51 /* LoginPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -211,7 +203,7 @@
 		CA6868C7292572150093308D /* Provider */ = {
 			isa = PBXGroup;
 			children = (
-				CA6868D72925A1DE0093308D /* LoginProvider.swift */,
+				CAE91DEA2936849400D51A51 /* LoginProvider.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -229,9 +221,9 @@
 		CA6868CA2925722C0093308D /* ServiceLayer */ = {
 			isa = PBXGroup;
 			children = (
-				CA6868CC2925A1200093308D /* NetworkError.swift */,
-				CA6868CB2925A1200093308D /* RequestModel.swift */,
-				CA6868CD2925A1200093308D /* ServiceLayer.swift */,
+				CAE91DE62936847F00D51A51 /* NetworkError.swift */,
+				CAE91DE42936847F00D51A51 /* RequestModel.swift */,
+				CAE91DE52936847F00D51A51 /* ServiceLayer.swift */,
 			);
 			path = ServiceLayer;
 			sourceTree = "<group>";
@@ -311,22 +303,22 @@
 			files = (
 				CA5BB90D292AF2D600225C3C /* MovieCollectionViewCell.swift in Sources */,
 				CA6868A9292560D40093308D /* ViewControllerMain.swift in Sources */,
-				CA6868D02925A1200093308D /* ServiceLayer.swift in Sources */,
+				CAE91DE92936847F00D51A51 /* NetworkError.swift in Sources */,
 				CA6868A5292560D40093308D /* AppDelegate.swift in Sources */,
 				CA207D612926C4B3002359C5 /* TextFieldUtils.swift in Sources */,
-				CA6868D62925A1CF0093308D /* LoginPresenter.swift in Sources */,
 				CA6868A7292560D40093308D /* SceneDelegate.swift in Sources */,
-				CA6868D22925A1380093308D /* Constants.swift in Sources */,
+				CAE91DEB2936849400D51A51 /* LoginProvider.swift in Sources */,
 				CA5BB905292AD36F00225C3C /* MoviesViewController.swift in Sources */,
-				CA6868D82925A1DE0093308D /* LoginProvider.swift in Sources */,
+				CAE91DED293684B900D51A51 /* LoginPresenter.swift in Sources */,
 				CA5BB910292B0A8800225C3C /* CardMovieModel.swift in Sources */,
-				CA6868CE2925A1200093308D /* RequestModel.swift in Sources */,
+				CAE91DE32936846E00D51A51 /* Constants.swift in Sources */,
+				CAE91DE72936847F00D51A51 /* RequestModel.swift in Sources */,
 				CA5BB912292B0C6F00225C3C /* MoviesProvider.swift in Sources */,
 				CA207D662926E802002359C5 /* PopularMovieModel.swift in Sources */,
 				CA6868D42925A1AC0093308D /* LoginResponse.swift in Sources */,
-				CA6868CF2925A1200093308D /* NetworkError.swift in Sources */,
 				CA6868E32925EBF90093308D /* LoginViewController.swift in Sources */,
 				CA207D642926E751002359C5 /* PopularMoviesListModel.swift in Sources */,
+				CAE91DE82936847F00D51A51 /* ServiceLayer.swift in Sources */,
 				CA7A50902926AEC600E304D5 /* NewTokenResponse.swift in Sources */,
 				CA5BB914292B0E7A00225C3C /* MoviesPresenter.swift in Sources */,
 			);
