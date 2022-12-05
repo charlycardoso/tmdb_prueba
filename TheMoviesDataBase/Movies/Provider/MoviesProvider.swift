@@ -17,12 +17,15 @@ protocol MoviesProviderProtocol {
 class MoviesProvider : MoviesProviderProtocol {
     
     func getPopularMovies() async throws -> PopularMoviesListModel {
-        let requestModel = RequestModel(endpoint: .popularMovies)
+        let queryParams = [
+            "language":"es",
+            "page":"1"
+        ]
+        let requestModel = RequestModel(endpoint: .popularMovies, queryItems: queryParams)
         do{
             let model = try await ServiceLayer.callService(requestModel, PopularMoviesListModel.self)
             return model
         }catch{
-            print(error)
             throw error
         }
     }

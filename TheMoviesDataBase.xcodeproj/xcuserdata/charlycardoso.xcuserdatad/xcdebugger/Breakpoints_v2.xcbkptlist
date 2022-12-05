@@ -3,4 +3,116 @@
    uuid = "1E9379FC-013D-4559-B7FE-525E919F526D"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F21B967F-E9B6-460F-B3E2-D036F09AE9BA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TheMoviesDataBase/Movies/Provider/MoviesProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getPopularMovies()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F21B967F-E9B6-460F-B3E2-D036F09AE9BA - e29b8cbca5dfc93"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TheMoviesDataBase.MoviesProvider.getPopularMovies() async throws -&gt; TheMoviesDataBase.PopularMoviesListModel"
+                  moduleName = "TheMoviesDataBase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Backup/Proyectos/iOS/UIkit/tmdb_prueba/TheMoviesDataBase/Movies/Provider/MoviesProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "F21B967F-E9B6-460F-B3E2-D036F09AE9BA - e9e539273d13deea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for TheMoviesDataBase.MoviesProvider.getPopularMovies() async throws -&gt; TheMoviesDataBase.PopularMoviesListModel"
+                  moduleName = "TheMoviesDataBase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Backup/Proyectos/iOS/UIkit/tmdb_prueba/TheMoviesDataBase/Movies/Provider/MoviesProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "F21B967F-E9B6-460F-B3E2-D036F09AE9BA - 24a8d75b2f84b891"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for TheMoviesDataBase.MoviesProvider.getPopularMovies() async throws -&gt; TheMoviesDataBase.PopularMoviesListModel"
+                  moduleName = "TheMoviesDataBase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Backup/Proyectos/iOS/UIkit/tmdb_prueba/TheMoviesDataBase/Movies/Provider/MoviesProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "68">
+               </Location>
+               <Location
+                  uuid = "F21B967F-E9B6-460F-B3E2-D036F09AE9BA - 2e6ba612a2abc696"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for TheMoviesDataBase.MoviesProvider.getPopularMovies() async throws -&gt; TheMoviesDataBase.PopularMoviesListModel"
+                  moduleName = "TheMoviesDataBase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/Backup/Proyectos/iOS/UIkit/tmdb_prueba/TheMoviesDataBase/Movies/Provider/MoviesProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "078EBC56-3B20-4B43-80E7-16C9F3BF3653"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TheMoviesDataBase/Movies/View/MoviesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "getMovies(movies:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1CD1EAC-40A6-4C6D-879A-D43E1CABB819"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TheMoviesDataBase/Movies/View/CollectionView/MovieCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "awakeFromNib()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uWP-jO-VfI">
-                                <rect key="frame" x="0.0" y="59" width="393" height="32"/>
+                                <rect key="frame" x="20" y="79" width="353" height="32"/>
                                 <segments>
                                     <segment title="Popular"/>
                                     <segment title="Top Rated"/>
@@ -26,8 +26,11 @@
                                 </segments>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Mgm-E2-RiV">
-                                <rect key="frame" x="0.0" y="97" width="393" height="755"/>
+                                <rect key="frame" x="20" y="130" width="353" height="722"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="353" id="4ur-S1-TAF"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="nfX-cm-YJL">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -40,13 +43,16 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Mgm-E2-RiV" firstAttribute="top" secondItem="uWP-jO-VfI" secondAttribute="bottom" constant="7" id="Zr0-Fe-KKT"/>
-                            <constraint firstItem="uWP-jO-VfI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fUd-YS-s5G"/>
-                            <constraint firstItem="Mgm-E2-RiV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jah-SV-H3F"/>
-                            <constraint firstAttribute="bottom" secondItem="Mgm-E2-RiV" secondAttribute="bottom" id="kRk-3z-gTs"/>
-                            <constraint firstItem="uWP-jO-VfI" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="v9w-CD-dyG"/>
-                            <constraint firstItem="Mgm-E2-RiV" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="xI3-Xz-0Vn"/>
-                            <constraint firstItem="uWP-jO-VfI" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="zO4-zC-9Tc"/>
+                            <constraint firstAttribute="trailing" secondItem="Mgm-E2-RiV" secondAttribute="trailing" constant="20" id="4gm-t7-XBy"/>
+                            <constraint firstItem="uWP-jO-VfI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="4jh-hX-pzg"/>
+                            <constraint firstItem="Mgm-E2-RiV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Biv-AB-4JV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Mgm-E2-RiV" secondAttribute="trailing" constant="20" id="MQm-bb-Fb6"/>
+                            <constraint firstAttribute="bottom" secondItem="Mgm-E2-RiV" secondAttribute="bottom" id="XMc-yo-C1N"/>
+                            <constraint firstItem="Mgm-E2-RiV" firstAttribute="top" secondItem="uWP-jO-VfI" secondAttribute="bottom" constant="20" id="ZUp-6z-lFg"/>
+                            <constraint firstItem="uWP-jO-VfI" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="bOt-r8-Bal"/>
+                            <constraint firstItem="Mgm-E2-RiV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="fnJ-ko-s28"/>
+                            <constraint firstItem="Mgm-E2-RiV" firstAttribute="top" secondItem="uWP-jO-VfI" secondAttribute="bottom" constant="20" id="kMp-4M-S5g"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uWP-jO-VfI" secondAttribute="trailing" constant="20" id="lVa-5m-Ta2"/>
                         </constraints>
                     </view>
                     <connections>

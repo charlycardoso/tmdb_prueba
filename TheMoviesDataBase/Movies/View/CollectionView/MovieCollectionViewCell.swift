@@ -9,6 +9,8 @@ import UIKit
 
 class MovieCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var container: UIView!
+    
     @IBOutlet weak var movieImage: UIImageView!
     @IBOutlet weak var movieTitle: UILabel!
     @IBOutlet weak var labelDate: UILabel!
@@ -18,13 +20,24 @@ class MovieCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        backgroundColor = .lightGray
         
-        movieTitle.font = UIFont.boldSystemFont(ofSize: 20)
-        movieTitle.textColor = .blue
-        
-        labelDesc.numberOfLines = 4
-        labelDesc.textAlignment = .left
+        styles()
     }
 
+    private func styles(){
+        
+        container.backgroundColor = .gray
+        container.layer.cornerRadius = 24
+        container.layoutMargins.bottom = 15
+        
+        movieImage.layer.cornerRadius = 24
+        
+        movieTitle.font = .systemFont(ofSize: 15, weight: .bold)
+        movieTitle.textColor = .systemGreen
+        
+        labelDesc.numberOfLines = 4
+        labelDesc.font = .systemFont(ofSize: 10, weight: .semibold)
+        labelDesc.textAlignment = .left
+        labelDesc.textColor = .systemGreen
+    }
 }

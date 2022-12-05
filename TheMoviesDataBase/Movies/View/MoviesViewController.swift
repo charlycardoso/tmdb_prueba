@@ -10,17 +10,13 @@ import UIKit
 class MoviesViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    lazy var presenter = MoviesPresenter()
-    private let cellWidthSize = UIScreen.main.bounds.width / 2
+    lazy var presenter = MoviesPresenter(delegate: self)
+    private let cellWidthSize = UIScreen.main.bounds.width * 0.42
     
-    var movies: [CardMovieModel] = []
+    var moviesArray: [CardMovieModel] = []
     
     override func viewDidLoad() {
-        
-        Task(priority: .high) {
-            await loadData()
-        }
-        
+        super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(
@@ -31,33 +27,40 @@ class MoviesViewController: UIViewController {
             forCellWithReuseIdentifier: "mycell"
         )
         
-        print("movies: \(movies)")
+        Task {
+            await presenter.popularMovies()
+        }
     }
     
-    private func loadData() async {
-        movies = await presenter.popularMovies()
-    }
 }
 
 
-extension MoviesViewController: UICollectionViewDataSource {
+extension MoviesViewController: UICollectionViewDataSource, MoviesProtocol {
+    
+    func getMovies(movies: [CardMovieModel]) {
+        moviesArray = movies
+        collectionView.reloadData()
+    }
+    
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return movies.count
+        return moviesArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mycell", for: indexPath) as? MovieCollectionViewCell
         
-        cell!.movieTitle.text = movies[indexPath.row].title
+        cell?.movieImage.loadFrom(URLAddress: "https://image.tmdb.org/t/p/original/\(moviesArray[indexPath.row].image)")
         
-        cell!.labelDate.text = movies[indexPath.row].date
-        cell!.labelRating.text = movies[indexPath.row].rating
-        cell!.labelDesc.text = movies[indexPath.row].description
+        cell!.movieTitle.text = moviesArray[indexPath.row].title
+        
+        cell!.labelDate.text = moviesArray[indexPath.row].date
+        cell!.labelRating.text = moviesArray[indexPath.row].rating
+        cell!.labelDesc.text = moviesArray[indexPath.row].description
         
         return cell!
     }
@@ -68,6 +71,10 @@ extension MoviesViewController : UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: cellWidthSize, height: 600)
+        return CGSize(width: cellWidthSize, height: 370)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
     }
 }
