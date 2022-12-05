@@ -25,6 +25,9 @@ struct RequestModel {
         case login = "authentication/token/validate_with_login"
         case requestToken = "authentication/token/new"
         case popularMovies = "/movie/popular"
+        case topRated = "/movie/top_rated"
+        case onTV = "/tv/popular"
+        case airingToday = "/tv/airing_today"
     }
     
     enum URLBase : String {

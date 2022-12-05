@@ -20,7 +20,6 @@ class MovieCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         styles()
     }
 
@@ -40,4 +39,6 @@ class MovieCollectionViewCell: UICollectionViewCell {
         labelDesc.textAlignment = .left
         labelDesc.textColor = .systemGreen
     }
+    
+    
 }

@@ -9,6 +9,7 @@ import UIKit
 
 class MoviesViewController: UIViewController {
     
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var collectionView: UICollectionView!
     lazy var presenter = MoviesPresenter(delegate: self)
     private let cellWidthSize = UIScreen.main.bounds.width * 0.42
@@ -17,6 +18,7 @@ class MoviesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.setHidesBackButton(true, animated: true)
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(
@@ -27,12 +29,64 @@ class MoviesViewController: UIViewController {
             forCellWithReuseIdentifier: "mycell"
         )
         
+        loadPopularMovies()
+    }
+    
+    
+    @IBAction func mostrarPantallas(_ sender: Any) {
+        
+        switch segmentedControl.selectedSegmentIndex {
+            case 0:
+                loadPopularMovies()
+            case 1:
+                //cargar top rated
+                loadTopRatedMovies()
+            case 2:
+                //cargar on tv
+                loadOnTV()
+            case 3:
+                //cargar airing today
+                loadAiringToday()
+            default:
+                loadPopularMovies()
+        }
+        
+    }
+    
+    private func loadPopularMovies(){
         Task {
             await presenter.popularMovies()
         }
     }
     
+    private func loadTopRatedMovies(){
+        Task{
+            await presenter.topRated()
+        }
+    }
+    
+    private func loadOnTV(){
+        Task{
+            await presenter.onTV()
+        }
+    }
+    
+    private func loadAiringToday(){
+        Task{
+            await presenter.airingToday()
+        }
+    }
+    
+    @objc private func onTap(_ sender: UITapGestureRecognizer){
+        
+        //desplegar detalles
+        let vc = storyboard?.instantiateViewController(identifier: "MoviePreviewViewController") as? MoviePreviewViewController
+
+        navigationController?.present(vc!, animated: true)
+        
+    }
 }
+
 
 
 extension MoviesViewController: UICollectionViewDataSource, MoviesProtocol {
@@ -62,10 +116,13 @@ extension MoviesViewController: UICollectionViewDataSource, MoviesProtocol {
         cell!.labelRating.text = moviesArray[indexPath.row].rating
         cell!.labelDesc.text = moviesArray[indexPath.row].description
         
+//        cell!.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onTap(_:))))
+        
         return cell!
     }
+    
+    
 }
-
 
 extension MoviesViewController : UICollectionViewDelegateFlowLayout {
     

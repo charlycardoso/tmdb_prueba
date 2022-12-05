@@ -9,9 +9,9 @@ import Foundation
 
 protocol MoviesProviderProtocol {
     func getPopularMovies() async throws -> PopularMoviesListModel
-    func getTopRated()
-    func getOnTV()
-    func airingToday()
+    func getTopRated() async throws -> PopularMoviesListModel
+    func getOnTV() async throws -> TVListModel
+    func airingToday() async throws -> TVListModel
 }
 
 class MoviesProvider : MoviesProviderProtocol {
@@ -30,16 +30,48 @@ class MoviesProvider : MoviesProviderProtocol {
         }
     }
     
-    func getTopRated() {
-        print("algo")
+    func getTopRated() async throws -> PopularMoviesListModel {
+        let queryParams = [
+            "language":"es",
+            "page":"1"
+        ]
+        let requestModel = RequestModel(endpoint: .topRated, queryItems: queryParams)
+        do{
+            let model = try await ServiceLayer.callService(requestModel, PopularMoviesListModel.self)
+            return model
+        }catch{
+            throw error
+        }
     }
     
-    func getOnTV() {
-        print("algo")
+    func getOnTV() async throws -> TVListModel {
+        let queryParams = [
+            "language":"es",
+            "page":"1"
+        ]
+        let requestModel = RequestModel(endpoint: .onTV, queryItems: queryParams)
+        
+        do{
+            let model = try await ServiceLayer.callService(requestModel, TVListModel.self)
+            return model
+        }catch{
+            throw error
+        }
     }
     
-    func airingToday() {
-        print("algo")
+    func airingToday() async throws -> TVListModel {
+        let queryParams = [
+            "language":"es",
+            "page":"1"
+        ]
+        let requestModel = RequestModel(endpoint: .airingToday, queryItems: queryParams)
+        
+        do{
+            let model = try await ServiceLayer.callService(requestModel, TVListModel.self)
+            return model
+        }catch{
+            throw error
+        }
     }
     
     

@@ -36,8 +36,7 @@ class LoginViewController: UIViewController {
                     //ir a movies
                     let vc = storyboard?.instantiateViewController(identifier: "MoviesViewController") as? MoviesViewController
                     
-                    //cambiar present por replace
-                    navigationController?.present(vc!, animated: true)
+                    navigationController?.show(vc!, sender: nil)
                 }
             }
         }else{

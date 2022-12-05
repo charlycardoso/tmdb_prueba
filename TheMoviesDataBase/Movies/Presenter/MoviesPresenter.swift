@@ -40,4 +40,61 @@ class MoviesPresenter {
         }
     }
     
+    @MainActor
+    func topRated() async {
+        moviesArray.removeAll()
+        
+        do{
+            let movies = try await provider.getTopRated()
+            
+            for result in movies.results {
+                let movie = CardMovieModel(id: result.id, image: result.backdropPath ?? "", title: result.title, date: result.releaseDate, rating: "\(result.voteAverage)", description: result.overview)
+                moviesArray.append(movie)
+            }
+            
+            delegate?.getMovies(movies: moviesArray)
+            
+        }catch let err{
+            print("error: ", err)
+        }
+    }
+    
+    @MainActor
+    func onTV() async {
+        moviesArray.removeAll()
+        
+        do{
+            let movies = try await provider.getOnTV()
+            
+            for result in movies.results {
+                let movie = CardMovieModel(id: result.id, image: result.backdropPath ?? "", title: result.name, date: "No disponible", rating: "\(result.voteAverage)", description: result.overview)
+                moviesArray.append(movie)
+            }
+            
+            delegate?.getMovies(movies: moviesArray)
+            
+        }catch let err{
+            print("error: ", err)
+        }
+    }
+    
+    @MainActor
+    func airingToday() async {
+        moviesArray.removeAll()
+        
+        do{
+            let movies = try await provider.airingToday()
+            
+            for result in movies.results {
+                let movie = CardMovieModel(id: result.id, image: result.backdropPath ?? "", title: result.name, date: "No disponible", rating: "\(result.voteAverage)", description: result.overview)
+                moviesArray.append(movie)
+            }
+            
+            delegate?.getMovies(movies: moviesArray)
+            
+        }catch let err{
+            print("error: ", err)
+        }
+    }
+    
 }

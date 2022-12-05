@@ -85,22 +85,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "078EBC56-3B20-4B43-80E7-16C9F3BF3653"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TheMoviesDataBase/Movies/View/MoviesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "getMovies(movies:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "E1CD1EAC-40A6-4C6D-879A-D43E1CABB819"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -108,8 +92,8 @@
             filePath = "TheMoviesDataBase/Movies/View/CollectionView/MovieCollectionViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "awakeFromNib()"
             landmarkType = "7">
          </BreakpointContent>

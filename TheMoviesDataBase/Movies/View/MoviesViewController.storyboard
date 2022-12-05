@@ -24,6 +24,9 @@
                                     <segment title="On TV"/>
                                     <segment title="Airing Today"/>
                                 </segments>
+                                <connections>
+                                    <action selector="mostrarPantallas:" destination="Y6W-OH-hqX" eventType="valueChanged" id="Non-Z8-l9Y"/>
+                                </connections>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Mgm-E2-RiV">
                                 <rect key="frame" x="20" y="130" width="353" height="722"/>
@@ -55,13 +58,24 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uWP-jO-VfI" secondAttribute="trailing" constant="20" id="lVa-5m-Ta2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="c7s-Lq-xE4"/>
                     <connections>
                         <outlet property="collectionView" destination="Mgm-E2-RiV" id="tDP-Ze-Oc6"/>
+                        <outlet property="segmentedControl" destination="uWP-jO-VfI" id="HOA-No-pUK"/>
+                        <segue destination="9ej-DD-RQY" kind="presentation" identifier="WatchPreview" id="D5N-CS-3wP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122.90076335877862" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1049.6183206106871" y="-2.1126760563380285"/>
+        </scene>
+        <!--Movie preview-->
+        <scene sceneID="dUW-0N-4me">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MoviePreviewViewController" storyboardName="MoviePreviewViewController" referencedIdentifier="MoviePreviewViewController" id="9ej-DD-RQY" userLabel="Movie preview" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQV-6q-EGW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1733.5877862595419" y="-293.66197183098592"/>
         </scene>
     </scenes>
     <resources>

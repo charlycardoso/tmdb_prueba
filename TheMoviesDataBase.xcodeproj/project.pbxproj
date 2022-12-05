@@ -26,6 +26,10 @@
 		CA6868B1292560D70093308D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA6868AF292560D70093308D /* LaunchScreen.storyboard */; };
 		CA6868D42925A1AC0093308D /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6868D32925A1AC0093308D /* LoginResponse.swift */; };
 		CA6868E32925EBF90093308D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA6868E12925EBF90093308D /* LoginViewController.swift */; };
+		CA730C99293DB23A0022D61E /* TVListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA730C98293DB23A0022D61E /* TVListModel.swift */; };
+		CA730C9B293DB2570022D61E /* TVChannelsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA730C9A293DB2570022D61E /* TVChannelsModel.swift */; };
+		CA730CA4293DC5020022D61E /* MoviePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA730CA3293DC5020022D61E /* MoviePreviewViewController.swift */; };
+		CA730CA6293DC5100022D61E /* MoviePreviewViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA730CA5293DC5100022D61E /* MoviePreviewViewController.storyboard */; };
 		CA7A50902926AEC600E304D5 /* NewTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7A508F2926AEC600E304D5 /* NewTokenResponse.swift */; };
 		CAE91DE32936846E00D51A51 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE91DE22936846E00D51A51 /* Constants.swift */; };
 		CAE91DE72936847F00D51A51 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE91DE42936847F00D51A51 /* RequestModel.swift */; };
@@ -57,6 +61,10 @@
 		CA6868B2292560D70093308D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA6868D32925A1AC0093308D /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		CA6868E12925EBF90093308D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CA730C98293DB23A0022D61E /* TVListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVListModel.swift; sourceTree = "<group>"; };
+		CA730C9A293DB2570022D61E /* TVChannelsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVChannelsModel.swift; sourceTree = "<group>"; };
+		CA730CA3293DC5020022D61E /* MoviePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePreviewViewController.swift; sourceTree = "<group>"; };
+		CA730CA5293DC5100022D61E /* MoviePreviewViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoviePreviewViewController.storyboard; sourceTree = "<group>"; };
 		CA7A508F2926AEC600E304D5 /* NewTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTokenResponse.swift; sourceTree = "<group>"; };
 		CAE91DE22936846E00D51A51 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CAE91DE42936847F00D51A51 /* RequestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
@@ -125,6 +133,7 @@
 		CA5BB903292AD2FF00225C3C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CA730C9C293DB88C0022D61E /* Preview */,
 				CA5BB908292AE81F00225C3C /* CollectionView */,
 				CA5BB904292AD36F00225C3C /* MoviesViewController.swift */,
 				CA5BB906292AD38C00225C3C /* MoviesViewController.storyboard */,
@@ -160,11 +169,11 @@
 		CA6868A3292560D40093308D /* TheMoviesDataBase */ = {
 			isa = PBXGroup;
 			children = (
-				CA207D672926E891002359C5 /* Movies */,
 				CA6868C0292571C40093308D /* Utils */,
 				CA6868CA2925722C0093308D /* ServiceLayer */,
 				CA6868C9292572270093308D /* Model */,
 				CA6868C3292571F70093308D /* Login */,
+				CA207D672926E891002359C5 /* Movies */,
 				CA6868A4292560D40093308D /* AppDelegate.swift */,
 				CA6868A6292560D40093308D /* SceneDelegate.swift */,
 				CA6868A8292560D40093308D /* ViewControllerMain.swift */,
@@ -222,6 +231,7 @@
 		CA6868C9292572270093308D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CA730C97293DB21F0022D61E /* TV */,
 				CA207D622926E73C002359C5 /* Movies */,
 				CA6868D32925A1AC0093308D /* LoginResponse.swift */,
 				CA7A508F2926AEC600E304D5 /* NewTokenResponse.swift */,
@@ -237,6 +247,24 @@
 				CAE91DE52936847F00D51A51 /* ServiceLayer.swift */,
 			);
 			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		CA730C97293DB21F0022D61E /* TV */ = {
+			isa = PBXGroup;
+			children = (
+				CA730C98293DB23A0022D61E /* TVListModel.swift */,
+				CA730C9A293DB2570022D61E /* TVChannelsModel.swift */,
+			);
+			path = TV;
+			sourceTree = "<group>";
+		};
+		CA730C9C293DB88C0022D61E /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				CA730CA3293DC5020022D61E /* MoviePreviewViewController.swift */,
+				CA730CA5293DC5100022D61E /* MoviePreviewViewController.storyboard */,
+			);
+			path = Preview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +330,7 @@
 				CA6868B1292560D70093308D /* LaunchScreen.storyboard in Resources */,
 				CA6868AE292560D70093308D /* Assets.xcassets in Resources */,
 				CA6868AC292560D40093308D /* Main.storyboard in Resources */,
+				CA730CA6293DC5100022D61E /* MoviePreviewViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,11 +343,14 @@
 			files = (
 				CA5BB90D292AF2D600225C3C /* MovieCollectionViewCell.swift in Sources */,
 				CA6868A9292560D40093308D /* ViewControllerMain.swift in Sources */,
+				CA730C9B293DB2570022D61E /* TVChannelsModel.swift in Sources */,
 				CAE91DE92936847F00D51A51 /* NetworkError.swift in Sources */,
 				CA6868A5292560D40093308D /* AppDelegate.swift in Sources */,
 				CA207D612926C4B3002359C5 /* TextFieldUtils.swift in Sources */,
 				CA6868A7292560D40093308D /* SceneDelegate.swift in Sources */,
 				CAE91DEB2936849400D51A51 /* LoginProvider.swift in Sources */,
+				CA730CA4293DC5020022D61E /* MoviePreviewViewController.swift in Sources */,
+				CA730C99293DB23A0022D61E /* TVListModel.swift in Sources */,
 				CA5BB905292AD36F00225C3C /* MoviesViewController.swift in Sources */,
 				CAE91DED293684B900D51A51 /* LoginPresenter.swift in Sources */,
 				CA5BB910292B0A8800225C3C /* CardMovieModel.swift in Sources */,
